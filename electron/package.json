@@ -1,0 +1,17 @@
+{
+  "name": "churchapp-electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "wait-on http://localhost:5173 && electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "electron": "^39.2.4",
+    "electron-builder": "^24.9.1",
+    "wait-on": "^7.0.1"
+  }
+}

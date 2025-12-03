@@ -1,0 +1,17 @@
+{
+  "name": "churchapp",
+  "version": "1.0.0",
+  "description": "Church Management System",
+  "author": "Jeena J Das",
+  "license": "ISC",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix react-ui run dev\" \"npm --prefix electron run start\"",
+    "build": "npm --prefix react-ui run build",
+    "electron-build": "npm run build && npm --prefix electron run build",
+    "setup": "node electron/setup-admin.js",
+    "install-all": "npm install && npm --prefix electron install && npm --prefix react-ui install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
