@@ -24,11 +24,11 @@ function createWindow() {
   if (isDev) {
     
     mainWindow.loadURL('http://localhost:5173');
-    console.log('✅ Loading from dev server: http://localhost:5173');
+    console.log(' Loading from dev server: http://localhost:5173');
   } else {
     
     mainWindow.loadFile(path.join(__dirname, '../react-ui/dist/index.html'));
-    console.log('✅ Loading from production build');
+    console.log(' Loading from production build');
   }
 
   
